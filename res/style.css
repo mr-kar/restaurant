@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Poppins, sans-serif;
+}
+.section-padding{
+    padding: 100px 0;
+}
+nav{
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+    height: 60px;
+    width: 100%;
+    z-index: 3;
+    opacity: 0.8;
+}
+nav .navbar-left ul{
+    display: flex;
+    list-style: none;   
+}
+nav .navbar-left ul li{
+    margin: 0 20px;
+
+}
+nav .navbar-left ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+nav .navbar-left ul li a:hover{
+    color: cadetblue;
+    transition: 0.3s ease-in-out;
+}
+nav .navbar-left ul li a::after{
+    content: '';
+    display: block;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    transform: scaleX(0);
+    transition: 0.3s linear;
+}
+nav .navbar-left ul li a:hover::after{
+    transform: scaleX(0.7)
+}
+nav .brand{
+    display: flex;
+}
+nav .brand a{
+    font-family: carattere, sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    color: black;
+}
+nav .navbar-right ul{
+    display: flex;
+    list-style: none;
+}
+nav .navbar-right ul li{
+    margin: 0 20px;
+}
+nav .navbar-right ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+nav .navbar-right ul li a:hover{
+    color: cadetblue;
+    transition: 0.3s ease-in-out;
+}
+nav .navbar-right ul li a::after{
+    content: '';
+    display: block;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    transform: scaleX(0);
+    transition: 0.3s linear;
+}
+nav .navbar-right ul li a:hover::after{
+    transform: scaleX(0.7)
+}
+
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    top: 280px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 22px;
+}
+.carousel-caption a{
+    font-size: 20px;
+}
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.about img{
+    border-radius: 100px;
+}
+.about p{
+    font-size: 22px;
+}
+.about hr{
+    width: 250px;
+    border: 2px solid rgb(0, 0, 0);
+}
+.about a{
+    font-size: 20px;
+}
+.menu {
+    display: flex;
+}
+.menu hr{
+    width: 250px;
+    justify-content: center;
+}
+.service{
+    background: url('img/15.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    z-index: 1;
+}
+.service hr{
+    width: 250px;
+    border-top: 3px solid rgb(255, 255, 255);
+}
+.service  span{
+    font-size: 100px;
+    color: rgb(185, 185, 185);
+}
+.service h1{
+    color: rgb(212, 212, 212);
+}
+.service p{
+    color: rgb(214, 214, 214);
+    width: 420px;
+    font-size: 22px;
+    z-index: 4;
+}
+
+.form{
+    width: 40%;
+    padding: 40px;
+    background-color: rgb(233, 209, 209);
+    border: 1px solid #000;
+    align-items: center;
+    
+}
+.form h2{
+    font-size: 30px;
+    color: #666;
+    font-weight: 500;
+}
+.form .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.form .inputBox input,
+.form .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    resize: none;
+    background-color: rgb(233, 209, 209);
+}
+.form .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    color: #333;
+    transition: 0.5s;
+}
+.form .inputBox input:focus~span,
+.form .inputBox input:valid~span,
+.form .inputBox textarea:focus~span,
+.form .inputBox textarea:valid~span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.form .inputBox input[type="submit"]{
+    width: 100px;
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+.footer{
+    background-color: rgb(103, 103, 96);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100px;
+}
+@media (max-width: 768px) {
+    
+}
